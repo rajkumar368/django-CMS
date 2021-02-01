@@ -1,0 +1,40 @@
+
+{% extends 'blog/base.html' %}
+{% load static %}
+{% load crispy_forms_tags %} 
+{% block extra_head %}
+    {{ form.media }}
+{% endblock %}
+{% block content %}
+  
+</body>
+</html>
+    <!-- Begin Page Content -->
+    <div style="background-image:url('https://images.wallpaperscraft.com/image/rocks_water_planets_157183_3840x2400.jpg'); height: 870px;" >
+    <div class="container-fluid" >
+
+        <!-- Page Heading -->
+        <div class="d-sm-flex align-items-center justify-content-between mb-4 ">
+        <h1 s class="h3 mb-0 text-gray-800">P</h1>
+        </div>          
+
+        <!-- Main Content Here -->
+        <div class="card-body p-0">
+            <div class="col-lg-3"></div>
+              <div class="p-5">
+                <div class="text-center">
+                    <h1 class="h4 text-gray-900 mb-4">Create Post</h1>
+                </div>
+                  <form method="POST" enctype="multipart/form-data" style="text-align: center; height: 650px;">
+                      {{ form.as_p }}
+                      {{ form.media }}
+                      {% csrf_token %}
+                      <button type="submit" class="btn btn-success " style="padding:5px 40px;margin-left: 50px;">Submit</button>
+                      <p style=" margin-left: 50px; margin-top: 10px; font-size: 20px;"><a class="small" href="{% url 'post' %}">Back</a></p>
+                  </form>
+             </div>
+         </div>
+     </div>
+  </div> 
+    <!-- /.container-fluid -->
+{% endblock content %}

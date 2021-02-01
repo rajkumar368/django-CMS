@@ -1,0 +1,49 @@
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image:url("https://images.wallpaperscraft.com/image/rocks_water_planets_157183_3840x2400.jpg");
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+.panel-default{
+    color:#ffff;
+    text-align: center;
+    padding:0px 150px;
+}
+.panel-default.panel-heading{
+    text-align: center;
+}
+
+.panel-body{
+    background-color:#8288bb;
+    
+}
+.pera{
+      width:400px; 
+      height:10px;
+}
+.log{
+    text-align: center;
+    background: radial-gradient(ellipse at center, #362c45 15%,#acbbfc 100%);
+    padding: 40px 20px;
+}
+.input {
+    background-color: #1d70b2;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .input:hover {
+    background-color: #45a049;
+  }
+
+.field{
+    width: 100%;
+    padding: 12px,20px;
+    margin: 8px 0px;
+    box-sizing: border-box;
+}

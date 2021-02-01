@@ -1,0 +1,113 @@
+body{
+    margin:0px;
+}
+ .menu-item{
+    font-weight: 600;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: black;
+    margin-right: 24px;
+    cursor:pointer;
+    margin-top: 0px;
+}
+.primary-button{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color: rgb(170, 210, 54);
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 9px 20px;
+    font-weight: 600;
+    height: 40px;
+
+}
+
+.logout{
+    padding-left: 8px;
+}
+#nav{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    width:100%;
+    height: 77px;
+    justify-content: space-between;
+    padding:0px 28px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(204, 204, 204) 0px 1px 1px;
+    position: fixed;
+    }
+    
+ .logo{
+      width:40px;
+  }
+.latest{
+    width: fit-content;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: -0.6px;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    margin: 0px;
+}
+.latest_logo{
+    width: 25px;
+}
+.filter_cat{
+    font-size: 13.6px;
+    margin:13.6px 0px 13.6px 6.8px;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+.cat_btn{
+    font-size: 12px;
+    color: rgb(0, 132, 255);
+    cursor: pointer;
+    padding: 6px 14px;
+    border-radius: 15px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(0, 132, 255);
+    border-image: initial;
+    margin: 5px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    
+   
+}
+.menu-item{
+   font-weight: 600;
+   font-size: 14px;
+   font-family: 'Poppins', sans-serif;
+   text-decoration: none;
+   color: black;
+   margin-right: 24px;
+   cursor:pointer;
+}
+#all_btn{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.cbtn{
+    padding:16px 0px 0px;
+    margin:0px 0px 20px;
+}
+
+.logo_flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#margi{
+    margin-top: 0px;
+}

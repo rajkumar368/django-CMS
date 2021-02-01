@@ -1,0 +1,8 @@
+Django==2.2.10
+django-ckeditor==5.9.0
+django-crispy-forms==1.9.0
+django-js-asset==1.2.2
+django-tinymce==3.0.1
+Pillow==7.1.1
+pytz==2019.3
+sqlparse==0.3.1

@@ -1,0 +1,25 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+
+{% block extra_head %}
+<link rel='stylesheet' href="{% static 'blog/css/details.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class= "main">
+        <div id = "cards">
+            <div class= "card" style="position: static;">
+                {% if posts.image %}   
+                    <img class= "cardimg" src= "{{ posts.image.url }}"/>
+                {% else %}
+                    <img class= "cardimg" src= "http://127.0.0.1:8000/media/blog/post/WhatsApp_Image_2019-06-19_at_17.55.10.jpeg"/>
+                {% endif %}
+                <div class = "cardcontent">
+                    <h3 class= "title">{{ posts.title }}</h3>
+                    <p class= "author">{{posts.author}}<span class= "date">| {{ posts.date }}</span><span style="margin-left:300px; font-size: 12px;"><a href="{% url 'edit-post' posts.slug %}">EDIT POST</a></span></p>
+                    <p class= "content">{{ posts.content|safe }}</p>    
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
